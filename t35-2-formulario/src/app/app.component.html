@@ -1,0 +1,64 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<div class="container">
+  <h1 class="text-primary mb-4">Formulario de Contacto</h1>
+  <div class="row mb-3">
+    <div class="col-2">
+      <label class="form-label" for="nombre">Nombre:</label>
+    </div>
+    <div class="col-3">
+      <input class="form-control" type="text" [(ngModel)]="nombre">
+      <p class="text-danger mb-3">{{warning1}}</p>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-2">
+      <label class="form-label" for="cif">Email:</label>
+    </div>
+    <div class="col-3">
+      <input class="form-control" type="text" [(ngModel)]="email">
+      <p class="text-danger mb-3">{{warning2}}</p>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-2">
+      <label class="form-label" for="direccion">Mensaje:</label>
+    </div>
+    <div class="col-3">
+      <textarea class="form-control" type="text" [(ngModel)]="mensaje"></textarea>
+      <p class="text-danger mb-3">{{warning3}}</p>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-2">
+      <label class="form-label" for="grupo">2 + 3 = ?</label>
+    </div>
+    <div class="col-3">
+      <input class="form-control" type="text" [(ngModel)]="checkBot">
+      <p class="text-danger mb-3">{{warning4}}</p>
+    </div>
+  </div>
+
+  <button class="btn btn-success mb-3" (click)="saveRegister()">Enviar</button>
+  <hr>
+  <h1 class="text-primary mt-3 mb-3">Listado registros</h1>
+  <app-formulario [data]="registros"></app-formulario>
+</div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
